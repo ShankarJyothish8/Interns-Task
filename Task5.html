@@ -1,66 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <form>
-      <table>
-        <label for="First name">First Name</label>
-        <input type="text" id="First name" />
-        <br />
-        <br />
-        <label for="Last Name">Last Name</label>
-        <input type="text" placeholder="Last Name" id="Last Name" />
-        <br />
-        <br />
-        <label for="Email">Email</label>
-        <input type="email" placeholder="Email" id="Email" />
-        <br />
-        <br />
-        <label for="Pass">Password</label>
-        <input type="password" placeholder="Password" id="Pass" />
-        <br />
-        <br />
-        <label for="DOB">Date Of Birth</label>
-        <input type="date" placeholder="Date Of Birth" id="DOB" />
-        <br /><br />
-        <p>Enter you gender</p>
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="Gender" />
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="Gender" />
-        <label for="others">Others</label>
-        <input type="radio" id="other" name="Gender" />
-        <br /><br />
-        <p>Eneter your language</p>
-        <label for="Malayalam">Malayalam</label>
-        <input type="checkbox" id="Malayalam" />
-        <label for="English">English</label>
-        <input type="checkbox" id="English" />
-        <label for="Hindi">Hindi</label>
-        <input type="checkbox" id="Hindi" />
-        <br /><br />
-        <input type="datetime-local" />
-        <br /><br />
-        <input type="color" />
-        <button type="submit" value="submit">SAVE</button>
-        <br /><br />
-        <label for="">Enter your country</label>
-        <select name="country" id="country">
-          <option value="">select</option>
-          <option value="India">India</option>
-          <option value="Sri Lanka">Sri Lanka</option>
-          <option value="Afghanistan">Afghanistan</option>
-          <option value="Tibet">Tibet</option>
-          <option value="China">China</option>
-          <option value="Pakistan">Pakistan</option>
-        </select>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: bold;
+        }
+        td{
+            width: 350px;
+            text-align: left;
+        }
+        .a{
+          width: 700px;
+        }
+        hr{
+            color: 1px solid black;
+        }
+        .b{
+            height: 100px;
+        }
+        input{
+            border: none;
+            margin-left: 0px;
+        }
+        .not-bold{
+            font-weight: normal;
+        }
+        .right{
+            text-align: right;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">This is Task 5</h1>
+    <form action="backend.php">
+    <h1>Registration form</h1>
+    <table>
+        <tr>
+        <td >
+            First Name
+        </td>
+        <td class="a">
+            <input type="text">
+        </td>
+    </tr>
+        <tr>
+            <td>
+                Last Name
+            </td>
+            <td class="a">
+                <input type="text">
+            </td>
+        </tr>
+    <tr>
+        <td>
+            Email
+        </td>
+        <td class="a">
+            <input type="email" name="" id="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password
+        </td>
+        <td class="a">
+            <input type="password">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Re-enter Password
+    </td>
+    <td class="a">
+        <input type="password">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            Gender
+        </td>
+        <td>
+            <table>
+             <div><tr><input type="radio" name="myg">Male</tr><hr></tr><input type="radio" name="myg">Female</div>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Age:
+    </td>
+    <td>
+        <input type="number">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            Phone Number:
+        </td>
+        <td>
+            <input type="number">
+        </td>
+        <tr>
+        <td class="b">
+            Address
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            State
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Country:
+        </td>
+        <td class="h">
+            <label for="Country"></label>
+            <select name="Country" id="count">
+              <option value="Choose your Country">Choose your Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
 
-        <input type="submit" value="submit" />
-      </table>
-    </form>
-  </body>
+        </td>
+        <tr>
+            <td>
+                Languages known
+            </td>
+            <td>
+                <input type="radio" name="Eng">English
+                <input type="radio" name="kan">Kannada
+                <input type="radio" name="hin">Hindi
+                <input type="radio" name="tel">Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 
+                <input type="checkbox" name="myh">
+                <span class="not-bold">Hereby I declare all the details are true</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="right">
+                Log in to <a href="#">Ethnus</a> Website
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
 </html>

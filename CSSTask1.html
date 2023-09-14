@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th{
+        text-align: center;
+    }
+    td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 300px;
+        border-radius: 100px;
+    }
+    table{
+        background-color: rgb(135, 198, 219);
+    }
+    #shape1 {
+        height: 100px;
+        width: 150px;
+        /* background-color: green; */
+        border: 2px solid green;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+      #shape2 {
+        height: 100px;
+        width: 150px;
+        /* background-color: green; */
+        border: 2px solid green;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius: 10px;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+      #shape3 {
+        height: 100px;
+        width: 150px;
+        /* background-color: green; */
+        border: 2px solid green;
+        border-top-right-radius: 15px;
+        border-top-left-radius:15px;
+        border-bottom-right-radius:15px;
+        border-bottom-left-radius: 15px;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+      #shape4 {
+        height: 100px;
+        width: 150px;
+        /* background-color: green; */
+        border: 2px solid green;
+        border-radius: 50%;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+      #shape5 {
+        height: 100px;
+        width: 150px;
+        /* background-color: green; */
+        border: 2px solid green;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 1px;
+      }
+</style>
+<body>
+    <h1 style="text-align: center">This is Task 1</h1>
+    <table>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+            Age
+        </th>
+        <tr>
+            <td>
+                Jill
+            </td>
+            <td>
+                Smith
+            </td>
+            <td>
+                50
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Eve
+            </td>
+            <td>
+                Jackson
+            </td>
+            <td>
+                94
+            </td>
+        <tr>
+            <td>
+                John
+            </td>
+            <td>
+                Doe
+            </td>
+            <td>
+                80
+            </td>
+        </tr>
+        </tr>
+    </table> 
+    <div class="container">
+        <div id="shape1"></div>
+        <div id="shape2"></div>
+        <div id="shape3"></div>
+        <div id="shape2"></div>
+        <div id="shape1"></div>
+        <div id="shape3"></div>
+        <div id="shape4"></div>
+        <div id="shape1"></div>
+        <div id="shape5"></div>
+      </div>
+</body>
+</html>
